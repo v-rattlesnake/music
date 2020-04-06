@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ音乐</title>
+    <link rel="shortcut icon" href="images/QQ音乐.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="header">
+    <a title="QQ音乐"><img src="images/player_logo.png" alt="QQ音乐"></a>
+    <span>QQ音乐，千万高品质曲库尽享
+        <span class="box">客户端下载</span>
+        <a class="header_denglu">登录</a>
+        <a>设置</a>
+        <a class="box1"></a>
+    </span>
+</div>
+<div class="nav">
+    <div class="nav-left">
+        <div class="nav-header">
+            <ul>
+                <li><span></span>收藏</li>
+                <li><span></span>添加到</li>
+                <li><span></span>下载</li>
+                <li><span></span>删除</li>
+                <li><span></span>清空列表</li>
+            </ul>
+            <div class="nav-to content mCustomScrollbar" data-mcs-theme ="minimal-dark">
+                <div class="nav-top">
+                    <div class="toumu">
+                        <div class="nav-top-input"><span></span></div>
+                        <div class="nav-top-index"></div>
+                        <div class="nav-top-qu"><a href="javascript:;">歌曲</a></div>
+                        <div class="nav-top-name"><a href="javascript:;" title="歌手">歌手</a></div>
+                        <div class="nav-top-date">
+                            <span>时长</span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="nav-top musicList">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-right">
+        <div class="bgccc"><img src="" alt=""></div>
+        <p>歌曲名：<span></span></p>
+        <p>歌手名：<span></span></p>
+        <p>专辑名：<span></span></p>
+        <div class="ul">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_in">
+        <div class="footer_switcher">
+            <a href="javascript:;" class="last" title="上一首"></a>
+            <a href="javascript:;" class="atart" title="播放"></a>
+            <a href="javascript:;" class="next" title="下一首"></a>
+        </div>
+        <div class="footer_schedule">
+            <div>
+                <span class="quming"><span><a href="javascript:;" title=""></a></span> - <span><a title="" href="javascript:;"></a></span></span>
+                <span class="shijian">02:29 / 04:14</span>
+            </div>
+            <div class="footer_schedule1">
+                <div class="progress-bar">
+                    <div class="progress-line">
+                        <div class="progress-dot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_volume">
+        <a href="javascript:;" class="pattern" title="列表循环"></a>
+        <a href="javascript:;" class="like" title="喜欢"></a>
+        <a href="javascript:;" class="download" title="下载"></a>
+        <a href="javascript:;" class="comment" title=""><p>999</p></a>
+        <a href="javascript:;" class="pure" title="打开纯净模式"></a>
+        <a href="javascript:;" class="mute" title="关闭声音"></a>
+        <div>
+            <div class="progress-bar">
+                <div class="progress-line">
+                    <div class="progress-dot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bgimg"></div>
+<div class="bgc"></div>
+<audio src=""></audio>
+<div class="shade">
+    <div class="shade_con">
+        <div class="close"><p>×</p></div>
+        <div class="shade_zhuce">
+            <label for="name">昵称<input id="name" type="text" minlength="6" placeholder="请输入昵称，最短六个字符"></label>
+            <label for="idz">账号<input id="idz" type="text" minlength="6" placeholder="最短六位数字"></label>
+            <label for="pass">密码<input id="pass" type="password" minlength="6" placeholder="六个字符，需包含数字、大小写字母"></label>
+            <button>注册</button>
+            <p><a href="javascript:;"></a><span>已有账号？<a href="javascript:;" class="denglu">立即登录</a></span></p>
+        </div>
+        <div class="shade_denglu">
+            <label for="idd"><input id="idd" type="text" minlength="6" placeholder="请输入账号"></label>
+            <label for="passd"><input id="passd" type="password" minlength="6" placeholder="请输入密码"></label>
+            <button>登录</button>
+            <p><a href="javascript:;">忘记密码</a><span>还没有账号？<a href="javascript:;" class="zhuce">立即注册</a></span></p>
+        </div>
+    </div>
+</div>
+<div class="tishi"><div></div><p>请选择要操作的歌曲</p></div>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/underscore.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/player.js"></script>
+<script src="js/lyric.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
