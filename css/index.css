@@ -1,0 +1,729 @@
+body {
+    user-select: none;
+}
+
+a {
+    color: rgba(255, 255, 255, .8);
+}
+
+.header > a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: .5;
+}
+
+.header > a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.header > span {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 26px;
+}
+
+.header > span > a {
+    color: rgba(255, 255, 255, .5);
+    margin-left: 16px;
+}
+
+.header > span > .box {
+    display: inline-block;
+    margin-left: 15px;
+    width: 140px;
+    height: 26px;
+    border-radius: 13px;
+    text-align: center;
+    background-color: #31c27c;
+}
+
+.header > span > .box:hover {
+    background-color: #2caf6f;
+    cursor: pointer;
+}
+
+.header > span > .box1 {
+    opacity: 0;
+}
+
+.header > span:hover > .box1 {
+    opacity: 1;
+}
+
+.header > span > a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/*************************************************   歌曲单  ***************************************/
+.nav {
+    height: 75%;
+    width: 85%;
+    top: 11%;
+    position: absolute;
+    margin-left: 7.5%;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    cursor: default;
+    min-width: 1370px;
+}
+
+.nav > .nav-left {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.nav-header {
+    height: 100%;
+}
+
+.nav-header > ul > li, .nav-top div, .nav > .nav-right {
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.nav-header > ul > li {
+    border: 1px solid rgb(255, 255, 255);
+    width: 122px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+    opacity: .8;
+}
+
+.nav-header > ul > li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-header > ul > li > span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: -6px;
+    background: url("../images/icon_sprite.png") no-repeat -60px -20px;
+}
+
+.nav-header > ul > li:nth-child(2) span {
+    background-position: -20px -20px;
+}
+
+.nav-header > ul > li:nth-child(3) span {
+    background-position: -40px -240px;
+}
+
+.nav-header > ul > li:nth-child(4) span {
+    background-position: -100px -20px;
+}
+
+.nav-header > ul > li:nth-child(5) span {
+    background-position: -40px -300px;
+}
+
+.nav-to {
+    clear: left;
+    padding-top: 20px;
+    height: 90%;
+    /*overflow: auto;*/
+    overflow: hidden;
+}
+
+.nav-top{
+    height: 100%;
+}
+.nav-top > .toumu {
+    clear: left;
+    width: 100%;
+    /*height: 100%;*/
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.nav-top > div:last-child {
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+}
+
+.nav-top .nav-top-input {
+    margin-right: 10px;
+}
+
+.nav-top .nav-top-input.box1 > span {
+    background: url("../images/icon_sprite.png") no-repeat -60px -80px;
+    border-color: #fff;
+}
+
+.nav-top .nav-top-input > span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    position: relative;
+    top: 2px;
+}
+
+.nav-top .nav-top-input > span:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.nav-top .nav-top-index {
+    width: 18px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.nav-top .box4 {
+    color: transparent;
+    background: url("../images/wave.gif") no-repeat 8px center;
+}
+
+.nav-top .nav-top-qu {
+    width: 70%;
+    text-align: left;
+}
+
+.nav-top .nav-top-qu > a:hover {
+    color: #fff;
+}
+
+.nav-top .nav-top-qu > span {
+    float: right;
+    /*display: inline-block;*/
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: url("../images/icon_list_menu.png") no-repeat -120px 2px;
+    opacity: .5;
+    display: none;
+    overflow: hidden;
+}
+
+.nav-top .nav-top-qu > .box5 {
+    background-position: -120px -198px;
+}
+
+.nav-top .nav-top-qu > span:nth-child(2) {
+    background-position: -120px -38px;
+}
+
+.nav-top .nav-top-qu > span:nth-child(3) {
+    background-position: -120px -118px;
+}
+
+.nav-top .nav-top-qu > span:nth-child(4) {
+    background-position: -120px -78px;
+}
+
+.nav-top .nav-top-qu > span > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-top .nav-top-qu > .box2 {
+    display: none;
+}
+
+.nav-top .nav-top-qu > span:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-top .nav-top-name {
+    width: 10%;
+    text-align: left;
+}
+
+.nav-top .nav-top-name > a:hover {
+    color: #fff;
+}
+
+.nav-top .nav-top-date {
+    width: 10%;
+    height: 45px;
+}
+
+.nav-top .nav-top-date > .zi {
+    display: block;
+}
+
+.nav-top .nav-top-date > .tu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 3px auto 0;
+    background: url("../images/icon_list_menu.png") -120px -158px;
+    opacity: .8;
+}
+
+.nav-top .nav-top-date a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+
+.nav-top .nav-top-date > .tu:hover {
+    opacity: 1;
+}
+
+.musicList{
+    width: 100%;
+    height: calc(100% - 46px);
+}
+.musicList .box{
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.musicList .box:last-of-type{
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+}
+.musicList .mCustomScrollBox,.musicList .mCSB_container,.musicList .box{
+    width: 100%;
+}
+
+/*.nav-top>div:hover span{*/
+/*display: inline-block;*/
+/*}*/
+
+/*************************************************    歌词区     ***************************************/
+.nav > .nav-right {
+    float: right;
+    width: 30%;
+    height: 100%;
+    line-height: 24px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.nav > .nav-right > p {
+    color: rgba(255, 255, 255, .8);
+}
+
+.nav > .nav-right > p > span:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.nav > .nav-right .ul {
+    margin-top: 8%;
+    height: 44%;
+    overflow: hidden;
+    opacity: .8;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .6) 10%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, .6) 90%, rgba(255, 255, 255, 0) 100%);
+}
+
+.nav > .nav-right ul {
+}
+
+.nav > .nav-right ul > .on {
+    color: #31c27c;
+}
+
+.nav > .nav-right ul > .on1 {
+    color: rgba(255, 255, 255, .5)
+}
+
+.nav > .nav-right ul > .on2 {
+    color: rgba(255, 255, 255, .3)
+}
+
+.nav > .nav-right ul > li {
+    line-height: 30px;
+}
+
+.nav > .nav-right > .bgccc {
+    background: url("../images/album_cover_player.png") no-repeat 155px 0;
+    margin-bottom: 10px;
+}
+
+.nav > .nav-right > .bgccc > img {
+    width: 180px;
+    height: 180px;
+}
+
+/*************************************************   背景   ***************************************/
+.bgc, .bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .35);
+    z-index: -1;
+}
+
+.bgimg {
+    background:  no-repeat;
+    background-size: cover;
+    filter: blur(100px);
+    /*z-index: -2;*/
+}
+
+/*************************************************   底部控制区   ***************************************/
+.footer {
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    bottom: 0;
+    margin-left: 7.5%;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    overflow: hidden;
+    min-width: 1370px;
+}
+
+.footer .footer_switcher a, .footer_volume a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/player.png") no-repeat;
+    opacity: .8;
+}
+
+.footer .footer_switcher .box3 {
+    background-position: -30px 1px;
+}
+
+.footer a.atart {
+    position: relative;
+    top: 2px;
+}
+
+.footer a.last {
+    background: url("../images/player.png") no-repeat 0 -28px;
+    height: 24px;
+}
+
+.footer a.next {
+    background: url("../images/player.png") no-repeat 0 -50px;
+    height: 24px;
+}
+
+.footer a.pattern {
+    background: url("../images/player.png") no-repeat 0 -204px;
+    height: 25px;
+}
+
+.footer a.pattern1 {
+    background-position: 4px -256px;
+    margin-bottom: 2px;
+    height: 26px;
+}
+
+.footer a.pattern2 {
+    background-position: 0 -72px;
+    height: 24px;
+}
+
+.footer a.pattern3 {
+    background-position: 0 -232px;
+    height: 24px;
+}
+
+.footer a.like {
+    background: url("../images/player.png") no-repeat 0 -94px;
+    height: 25px;
+}
+
+.footer a.like1 {
+    background-position: -30px -94px;
+}
+
+.footer a.download {
+    background: url("../images/player.png") no-repeat 0 -119px;
+    height: 25px;
+}
+
+.footer a.comment {
+    background: url("../images/player.png") no-repeat 0 -430px;
+    height: 25px;
+    position: relative;
+}
+
+.footer a.comment p {
+    position: absolute;
+    top: -4px;
+    right: 2px;
+    font-size: 12px;
+}
+
+.footer a.comment:hover {
+    background-position: 0 -490px;
+    color: #38ab73;
+}
+
+.footer a.pure {
+    background: url("../images/player.png") no-repeat 0 -282px;
+    width: 74px;
+    height: 26px;
+}
+
+.footer a.pure1 {
+    background-position: 0 -310px;
+}
+
+.footer a.mute {
+    background: url("../images/player.png") no-repeat 0 -142px;
+    height: 25px;
+}
+
+.footer a.mute1 {
+    background-position: 0 -180px;
+}
+
+.footer a:hover {
+    opacity: 1 !important;
+}
+
+.footer > .footer_in {
+    width: 70%;
+    display: inline-block;
+    position: relative;
+}
+
+.footer > .footer_in > div {
+    position: relative;
+    display: inline-block;
+}
+
+.footer > .footer_in > .footer_switcher {
+    width: 19%;
+}
+
+.footer > .footer_in > .footer_switcher > a {
+    margin-right: 14%;
+}
+
+.footer > .footer_in > .footer_schedule {
+    width: 80%;
+    top: -16px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 14px;
+}
+
+.footer > .footer_in > .footer_schedule > div > .shijian {
+    float: right;
+}
+
+.footer > .footer_in > .footer_schedule > div > .quming > span:hover a {
+    cursor: pointer;
+    color: #fff;
+}
+
+.footer > .footer_in > .footer_schedule > .footer_schedule1 {
+    height: 10px;
+}
+
+.footer > .footer_in > .footer_schedule > .footer_schedule1 > div {
+    position: relative;
+    margin-top: 10px;
+    top: 4px;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.footer > .footer_in > .footer_schedule > .footer_schedule1 > div > div {
+    width: 0;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer > .footer_in > .footer_schedule > .footer_schedule1 > div > div > div {
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.footer_schedule1:hover {
+    cursor: pointer;
+}
+
+
+.footer > .footer_volume {
+    width: 29%;
+    /*position: relative;*/
+    display: inline-block;
+}
+
+.footer > .footer_volume > a {
+    margin-left: 2%;
+    opacity: .8;
+}
+
+.footer > .footer_volume > div {
+    height: 10px;
+    width: 20%;
+    display: inline-block;
+}
+
+.footer > .footer_volume > div > div {
+    height: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    position: relative;
+    top: -11px;
+    display: inline-block;
+}
+
+.footer > .footer_volume > div > div > div {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer > .footer_volume > div > div > div > div {
+    /*position: relative;*/
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+
+.footer > .footer_volume > div:hover {
+    cursor: pointer;
+}
+
+
+.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical, .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+    margin: 12px 0 0;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 8px;
+    background-color: rgba(0,0,0,.2);
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+    background-color: transparent;
+}
+
+/*scrollbar-3d-light-color立体滚动条亮边的颜色（设置滚动条的颜色）<br>*/
+/*scrollbar-arrow-color上下按钮上三角箭头的颜色<br>*/
+/*scrollbar-base-color滚动条的基本颜色<br>*/
+/*scrollbar-dark-shadow-color立体滚动条强阴影的颜色<br>*/
+/*scrollbar-face-color立体滚动条凸出部分的颜色<br>*/
+/*scrollbar-highlight-color滚动条空白部分的颜色<br>*/
+/*scrollbar-shadow-color立体滚动条阴影的颜色<br>*/
+.tishi{
+    width: 200px;
+    height:140px;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #FFFFFF;
+    display: none;
+}
+.tishi div{
+    margin: 32px auto 14px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/icon_popup.png") 0 -150px;
+}
+
+
+.shade{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.shade_con{
+    width: 600px;
+    height: 370px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateY(0deg);
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+}
+.shade_con .close{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+.shade_con .close p{
+    float: right;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.shade_con div{
+    width: 70%;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.shade_con div input{
+    outline: none;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    width: 80%;
+}
+.shade_con div button{
+    background: #31c27c;
+    border: 0;
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+}
+.shade_con div p{
+    display: flex;
+    justify-content: space-between;
+}
+.shade_con div p a{
+    color: #31c27c;
+}
+.shade_con .shade_denglu{
+    transform: rotateY(0) translateZ(2px) translate(-50%);
+}
+.shade_con .shade_denglu input,.shade_con .shade_denglu button{
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+.shade_con .shade_zhuce{
+    transform: rotateY(180deg) translateZ(0px) translate(50%);
+    /*z-index: -1;*/
+}
+.shade_con .shade_zhuce label{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
